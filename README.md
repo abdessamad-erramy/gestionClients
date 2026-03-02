@@ -190,17 +190,17 @@ http://localhost:8080/gestionClients/clients
 
 <h2>📋 Client List</h2>
 <p align="center">
-  <img src="src/list.png" width="800"/>
+  <img src="src/list.jpg" width="800"/>
 </p>
 
 <h2>➕ Add Client</h2>
 <p align="center">
-  <img src="src/form.png" width="800"/>
+  <img src="src/add.jpg" width="800"/>
 </p>
 
 <h2>✏ Update Client</h2>
 <p align="center">
-  <img src="src/update.png" width="800"/>
+  <img src="src/update.jpg" width="800"/>
 </p>
 
 ---
