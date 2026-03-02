@@ -188,21 +188,20 @@ http://localhost:8080/gestionClients/clients
 
 ##  Screenshots
 
-### 📋 Client List
+<h2>📋 Client List</h2>
+<p align="center">
+  <img src="src/list.png" width="800"/>
+</p>
 
-![Client List](images/list.jpg)
+<h2>➕ Add Client</h2>
+<p align="center">
+  <img src="src/form.png" width="800"/>
+</p>
 
----
-
-### ➕ Add Client
-
-![Add Client](images/add.jpg)
-
----
-
-### ✏ Update Client
-
-![Update Client](images/update.jpg)
+<h2>✏ Update Client</h2>
+<p align="center">
+  <img src="src/update.png" width="800"/>
+</p>
 
 ---
 
