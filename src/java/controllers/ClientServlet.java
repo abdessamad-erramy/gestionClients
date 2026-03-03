@@ -24,9 +24,7 @@ public class ClientServlet extends HttpServlet {
         dao = new ClientDAO();
     }
 
-    // ======================
-    // GET : list / new / delete / edit
-    // ======================
+   
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -37,27 +35,27 @@ public class ClientServlet extends HttpServlet {
         try {
             switch (action) {
 
-                // ---------- NEW ----------
+               
                 case "new":
                     request.getRequestDispatcher("/client-form.jsp")
                            .forward(request, response);
                     break;
 
-                // ---------- DELETE ----------
+                
                 case "delete":
                     int id = Integer.parseInt(request.getParameter("id"));
                     dao.delete(id);
                     response.sendRedirect(request.getContextPath() + "/clients");
                     break;
 
-                // ---------- EDIT (form update) ----------
+                
                 case "edit":
-                    // غير Forward للفورم
+                  
                     request.getRequestDispatcher("/form-update.jsp")
                            .forward(request, response);
                     break;
 
-                // ---------- LIST ----------
+                
                 default:
                     List<Client> list = dao.findAll();
                     request.setAttribute("list", list);
@@ -70,9 +68,7 @@ public class ClientServlet extends HttpServlet {
         }
     }
 
-    // ======================
-    // POST : add / update
-    // ======================
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -80,7 +76,7 @@ public class ClientServlet extends HttpServlet {
         String action = request.getParameter("action");
 
         try {
-            // ---------- UPDATE ----------
+           
             if ("update".equals(action)) {
 
                 int id = Integer.parseInt(request.getParameter("idClt"));
@@ -99,7 +95,7 @@ public class ClientServlet extends HttpServlet {
                 return;
             }
 
-            // ---------- ADD ----------
+           
             String nom = request.getParameter("nomClt");
             String ville = request.getParameter("villeClt");
 
