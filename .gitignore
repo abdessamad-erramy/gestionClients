@@ -1,0 +1,12 @@
+# NetBeans / Ant
+/build/
+/dist/
+
+# NetBeans private config
+/nbproject/private/
+
+# Compiled files
+*.class
+
+# Logs
+*.log
