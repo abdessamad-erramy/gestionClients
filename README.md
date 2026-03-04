@@ -1,4 +1,4 @@
-# 🧾 Client Management System (JSP / Servlet / MVC)
+#  Client Management System (JSP / Servlet / MVC)
 
 A Java Web Application built using **JSP, Servlets, JDBC, and MVC architecture** to manage clients (Create, Read, Update, Delete).
 
